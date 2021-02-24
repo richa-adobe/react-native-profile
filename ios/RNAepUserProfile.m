@@ -1,6 +1,6 @@
 
 #import "RNAepUserProfile.h"
-#import "AEPMobileUserProfile.h"
+#import "AEPUserProfile.h"
 #import "React/RCTLog.h"
 
 @implementation RNAepUserProfile
