@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "RNAepUserProfile"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "RNAepUserProfile"
   s.description  = <<-DESC
                   RNAepUserProfile
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
 
   s.dependency "React"
-  s.dependency "AEPMobileUserProfile"
+  s.dependency "AEPUserProfile"
   s.frameworks = 'UIKit', 'SystemConfiguration', 'WebKit', 'UserNotifications'
   s.library = 'sqlite3.0', 'c++', 'z'
   #s.dependency "others"

@@ -1,6 +1,6 @@
 
 #import "RNAepUserProfile.h"
-#import "AEPMobileUserProfile.h"
+#import "AEPUserProfile.h"
 #import "React/RCTLog.h"
 
 @implementation RNAepUserProfile
@@ -10,11 +10,11 @@
     return dispatch_get_main_queue();
 }
 RCT_EXPORT_METHOD(extensionVersion: (RCTPromiseResolveBlock) resolve rejecter:(RCTPromiseRejectBlock)reject) {
-    resolve([AEPMobileUserProfile extensionVersion]);
+    resolve([AEPUserProfile extensionVersion]);
 }
 
 RCT_EXPORT_METHOD(registerExtension) {
-    [AEPMobileUserProfile registerExtension];
+    [AEPUserProfile registerExtension];
 }
 
 RCT_EXPORT_METHOD(printMessage) {
@@ -22,15 +22,15 @@ RCT_EXPORT_METHOD(printMessage) {
 }
 
 RCT_EXPORT_METHOD(removeUserAttribute: (nonnull NSString*) attributeName) {
-    [AEPMobileUserProfile removeUserAttribute:attributeName];
+    [AEPUserProfile removeUserAttribute:attributeName];
 }
 
 RCT_EXPORT_METHOD(updateUserAttribute: (nonnull NSString*) attributeName withValue: (nullable NSString*) attributeValue) {
-    [AEPMobileUserProfile updateUserAttribute:attributeName withValue:attributeValue];
+    [AEPUserProfile updateUserAttribute:attributeName withValue:attributeValue];
 }
 
 RCT_EXPORT_METHOD(updateUserAttributes: (nonnull NSDictionary*) attributeMap) {
-    [AEPMobileUserProfile updateUserAttributes:attributeMap];
+    [AEPUserProfile updateUserAttributes:attributeMap];
 }
 
 RCT_EXPORT_MODULE(RNAepUserProfile);
