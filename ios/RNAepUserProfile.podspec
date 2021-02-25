@@ -17,14 +17,7 @@ Pod::Spec.new do |s|
 
 
   s.dependency "React"
-  s.dependency "AEPUserProfile"
-  s.dependency "AEPCore"
-  s.dependency "AEPServices"
-  s.dependency "AEPIdentity"
-  s.dependency "AEPSignal"
-  s.dependency "AEPLifecycle"
-  s.dependency "AEPRulesEngine"
-  s.dependency "AEPEdge"
+  s.dependency "AEPUserProfile","3.0.0"
   s.frameworks = 'UIKit', 'SystemConfiguration', 'WebKit', 'UserNotifications'
   s.library = 'sqlite3.0', 'c++', 'z'
   #s.dependency "others"
