@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "RNAepUserProfile"
-  s.version      = "1.0.2"
+  s.version      = "1.0.0"
   s.summary      = "RNAepUserProfile"
   s.description  = <<-DESC
                   RNAepUserProfile
@@ -18,6 +18,13 @@ Pod::Spec.new do |s|
 
   s.dependency "React"
   s.dependency "AEPUserProfile"
+  s.dependency "AEPCore"
+  s.dependency "AEPServices"
+  s.dependency "AEPIdentity"
+  s.dependency "AEPSignal"
+  s.dependency "AEPLifecycle"
+  s.dependency "AEPRulesEngine"
+  s.dependency "AEPEdge"
   s.frameworks = 'UIKit', 'SystemConfiguration', 'WebKit', 'UserNotifications'
   s.library = 'sqlite3.0', 'c++', 'z'
   #s.dependency "others"
