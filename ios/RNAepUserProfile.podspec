@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
 
   s.dependency "React"
-  s.dependency "AEPUserProfile"
+  s.dependency "AEPMobileUserProfile"
   s.frameworks = 'UIKit', 'SystemConfiguration', 'WebKit', 'UserNotifications'
   s.library = 'sqlite3.0', 'c++', 'z'
   #s.dependency "others"
