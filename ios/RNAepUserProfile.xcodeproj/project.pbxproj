@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73DCE78380604624A5CD15BA /* Pods_RNAepUserProfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D0FC7A059E155CB7A0238D /* Pods_RNAepUserProfile.framework */; };
 		B3E7B58A1CC2AC0600A0062D /* RNAepUserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNAepUserProfile.m */; };
 /* End PBXBuildFile section */
 
@@ -24,8 +25,11 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNAepUserProfile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNAepUserProfile.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D3ABBD8F677BBCCCCC27357 /* Pods-RNAepUserProfile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNAepUserProfile.debug.xcconfig"; path = "Target Support Files/Pods-RNAepUserProfile/Pods-RNAepUserProfile.debug.xcconfig"; sourceTree = "<group>"; };
+		38D0FC7A059E155CB7A0238D /* Pods_RNAepUserProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNAepUserProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* RNAepUserProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNAepUserProfile.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNAepUserProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNAepUserProfile.m; sourceTree = "<group>"; };
+		B6A9E219B1C2CD47224E298C /* Pods-RNAepUserProfile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNAepUserProfile.release.xcconfig"; path = "Target Support Files/Pods-RNAepUserProfile/Pods-RNAepUserProfile.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73DCE78380604624A5CD15BA /* Pods_RNAepUserProfile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +58,27 @@
 				B3E7B5881CC2AC0600A0062D /* RNAepUserProfile.h */,
 				B3E7B5891CC2AC0600A0062D /* RNAepUserProfile.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				F9D7921034135602BDDC593A /* Pods */,
+				E01C4FFDEBC875385D280556 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		E01C4FFDEBC875385D280556 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38D0FC7A059E155CB7A0238D /* Pods_RNAepUserProfile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9D7921034135602BDDC593A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D3ABBD8F677BBCCCCC27357 /* Pods-RNAepUserProfile.debug.xcconfig */,
+				B6A9E219B1C2CD47224E298C /* Pods-RNAepUserProfile.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -63,6 +88,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNAepUserProfile" */;
 			buildPhases = (
+				501BDC2892184B59FD3B1991 /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -106,6 +132,31 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		501BDC2892184B59FD3B1991 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNAepUserProfile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
@@ -202,9 +253,10 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D3ABBD8F677BBCCCCC27357 /* Pods-RNAepUserProfile.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
+					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
@@ -218,6 +270,7 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6A9E219B1C2CD47224E298C /* Pods-RNAepUserProfile.release.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
