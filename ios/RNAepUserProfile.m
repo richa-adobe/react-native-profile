@@ -23,9 +23,9 @@
 //     resolve([AEPMobileUserProfile extensionVersion]);
 // }
 
-RCT_EXPORT_METHOD(AEPUserProfileVersionNumber) {
-    [AEPMobileUserProfile AEPUserProfileVersionNumber];
-}
+// RCT_EXPORT_METHOD(extensionVersion) {
+//     [AEPMobileUserProfile extensionVersion];
+// }
 // RCT_EXPORT_METHOD(registerExtension) {
 //     [AEPMobileUserProfile registerExtension];
 // }
